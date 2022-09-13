@@ -50,10 +50,10 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
   };
   return (
     <div className="task-form">
-      <h3 className="task-title">
-        {dataToEdit ? "Edit a worker or a task" : "Add a worker and a task"}{" "}
-      </h3>
       <form onSubmit={handleSubmit}>
+        <h3 className="task-title">
+          {dataToEdit ? "Edit a worker or a task" : "Add a worker and a task"}{" "}
+        </h3>
         <input
           type="text"
           name="name"
